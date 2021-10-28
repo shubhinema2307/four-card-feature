@@ -1,0 +1,158 @@
+/* common css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* basic css */
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+	max-width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.template {
+    background-color: #FAFAFA;
+}
+
+.col {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.template header {
+    text-align: center;
+    padding: 70px 300px;
+}
+.template header h1 {
+    font-size: 36px;
+    color: #4D4F62;
+    line-height: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.template header p {
+    font-size: 15px;
+    color: #4D4F62;
+    line-height: 25px;
+}
+
+.card {
+    border-top: 3px solid;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px #83a6d2;
+}
+.card .heading h2 {
+    font-size: 20px;
+    color:#4D4F62;
+    margin-bottom: 10px;
+}
+.card .text p {
+    font-size: 13px;
+    color:#4D4F62;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+.card .icon {
+   text-align: right;
+}
+
+.card1 {
+    border-color: #44D3D2;
+}
+.card2 {
+    border-color: #EA5454;
+    margin-bottom: 30px;
+}
+.card3 {
+    border-color: #FCAE4A;
+}
+.card4 {
+    border-color: #549EF2;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .row {
+        width: 100%;
+        display: block;
+        align-items: center;
+    }
+    .col {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .template{
+        padding-bottom: 80px;
+    }
+    .template header {
+        padding: 80px 30px;
+    }
+    .template header h1 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
